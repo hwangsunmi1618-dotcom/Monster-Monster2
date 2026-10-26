@@ -1,0 +1,6 @@
+{
+  "name": "한국 요괴 도감 - KOREAN YOKAI ARCHIVE",
+  "description": "산 너머, 물 아래, 오래된 마을의 어둠 속 우리 땅에 전해 내려오는 기묘한 존재와 지역 설화를 탐색하는 디지털 민속 아카이브.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

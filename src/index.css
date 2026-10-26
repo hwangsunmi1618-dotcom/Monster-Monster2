@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-batang: 'Gowun Batang', 'Song Myung', serif;
+    --font-serif-kr: 'Noto Serif KR', serif;
+    --font-sans-display: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-batang);
+    background-color: #F6F2EA;
+    color: #24211E;
+    overflow-x: hidden;
+  }
+}
+
+/* Halftone and vintage print paper patterns */
+.bg-halftone-dots {
+  background-image: radial-gradient(#24211e 0.75px, transparent 0.75px);
+  background-size: 8px 8px;
+}
+
+.bg-halftone-teal {
+  background-image: radial-gradient(#1D7874 1px, transparent 1px);
+  background-size: 6px 6px;
+}
+
+.bg-halftone-vermilion {
+  background-image: radial-gradient(#E75A2D 1px, transparent 1px);
+  background-size: 6px 6px;
+}
+
+.vintage-paper-texture {
+  background-color: #F6F2EA;
+  background-image: 
+    radial-gradient(circle at 100% 0%, rgba(231, 90, 45, 0.03) 0%, transparent 40%),
+    radial-gradient(circle at 0% 100%, rgba(29, 120, 116, 0.04) 0%, transparent 40%),
+    radial-gradient(rgba(36, 33, 30, 0.05) 0.5px, transparent 0.5px);
+  background-size: 100% 100%, 100% 100%, 6px 6px;
+}
+
+/* Comic print harsh ink block border and offset shadow */
+.comic-box {
+  border: 2px solid #1E1B18;
+  box-shadow: 4px 4px 0px #1E1B18;
+  transition: all 0.15s ease-out;
+}
+
+.comic-box:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 6px 6px 0px #1E1B18;
+}
+
+.comic-box-sm {
+  border: 1.5px solid #1E1B18;
+  box-shadow: 2.5px 2.5px 0px #1E1B18;
+}
+
+.comic-box-pressed:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px #1E1B18;
+}
+
+/* Vintage stamp badge */
+.vintage-stamp {
+  border: 1.5px dashed #1E1B18;
+  padding: 2px 8px;
+  font-family: var(--font-serif-kr);
+  letter-spacing: 0.05em;
+}
+
+/* Vintage drop cap */
+.drop-cap::first-letter {
+  font-family: var(--font-serif-kr);
+  font-size: 3.5rem;
+  line-height: 1;
+  float: left;
+  margin-right: 0.6rem;
+  margin-top: 0.1rem;
+  color: #E75A2D;
+  font-weight: 700;
+}
